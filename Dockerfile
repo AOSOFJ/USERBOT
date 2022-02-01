@@ -1,4 +1,4 @@
-RUN git clone https://github.com//Plugins.git /root/hellbot
+RUN git clone https://github.com/AOSOFJ/UB-BACK.git /root/hellbot
 
 WORKDIR /root/hellbot
 
