@@ -200,10 +200,6 @@
 
   },{
 
-    "url": "https://github.com/chrismytton/heroku-buildpack-jq"
-
-  },{
-
     "url": "heroku/python"
 
   }]
