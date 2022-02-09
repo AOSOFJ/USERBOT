@@ -56,7 +56,7 @@
       "description": "Create a private group.",
       "value": ""
     },
-    "HELLBOT_SESSION": {
+    "SESSION": {
       "description": "Get this value by using repl. Refer to Repo for more info.",
       "value": ""
     },
