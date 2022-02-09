@@ -4,7 +4,7 @@
 
   "description": "A working bot",
 
-  "logo": "",
+  "logo": "https://telegra.ph/file/be1604a96cbb83bd170a7.jpg",
 
   "keywords": [
 
@@ -25,6 +25,8 @@
   ],
 
   "repository": "https://github.com/AOSOFJ/USERBOT",
+  "website": "https://github.com/AOSOFJ/USERBOT",
+  "success_url": "https://t.me/its_py",
 
   "env": {
 
