@@ -1,1 +1,1 @@
-worker: bash UB-OP
+worker: bash UB-OP/host.py
