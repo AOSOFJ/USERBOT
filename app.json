@@ -178,5 +178,8 @@
     "options": {
       "version": "12"
     }
+  }],
+  "buildpacks" : [{
+     "url" : "heroku/python"
   }]
 }
