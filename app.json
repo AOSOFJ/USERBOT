@@ -89,7 +89,6 @@
     }
   }],
   "buildpacks": [{
-    {
     "url": "heroku/python"
   }]
 }
