@@ -1,10 +1,10 @@
 {
 
-  "name": "Hêllẞø†",
+  "name": "USERBOT",
 
-  "description": "Hêllẞø† is one of the Best UserBot for Telegram. Known for its Smoothness, Design, Support.",
+  "description": "A working bot",
 
-  "logo": "https://telegra.ph/file/7decf235312af8536e9aa.jpg ",
+  "logo": "https://telegra.ph/file/be1604a96cbb83bd170a7.jpg",
 
   "keywords": [
 
@@ -16,7 +16,7 @@
 
     "telethon",
 
-    "hellbot",
+    "userbot",
 
     "modular",
 
@@ -24,7 +24,9 @@
 
   ],
 
-  "repository": "https://github.com/The-HellBot/HellBot/",
+  "repository": "https://github.com/AOSOFJ/USERBOT",
+  "website": "https://github.com/AOSOFJ/USERBOT",
+  "success_url": "https://t.me/its_py",
 
   "env": {
 
@@ -40,7 +42,7 @@
 
       "description": "Fill Your Telegram Name. Default Value is Hêll. Required for reverting after clone.",
 
-      "value": "『ℌєℓℓ』",
+      "value": "Owner",
 
       "required": false
 
@@ -58,11 +60,11 @@
 
     "PM_LOG_ID": {
 
-      "description": "Fill your private Channel ID if you want to Log PM messages. Get channel id from @HELL_ID_BOT",
+      "description": "Fill your private group ID if you want to Log PM messages",
 
       "value": "",
 
-      "required": false
+      "required" :true
 
     },
 
@@ -70,15 +72,19 @@
 
       "description": "Your command handler. Default is ' . ' (dot).",
 
-      "value": "."
-
+      "value": ".",
+      
+      "required": false
+      
     },
 
     "EMOJI_IN_HELP": {
 
       "description": "A emoji to display in help command",
 
-      "value": "✧"
+      "value": "⊙",
+      
+      "required": false
 
     },
 
@@ -86,7 +92,9 @@
 
       "description": "No.of buttons to display in help menu.",
 
-      "value": "7"
+      "value": "7",
+      
+      "required": false
 
     },
 
@@ -94,7 +102,9 @@
 
       "description": "Get this value from my.telegram.org",
 
-      "value": ""
+      "value": "",
+      
+      "required" :true
 
     },
 
@@ -102,23 +112,29 @@
 
       "description": "Get this value from my.telegram.org",
 
-      "value": ""
+      "value": "",
+      
+      "required" :true
 
     },
 
     "LOGGER_ID": {
 
-      "description": "Create a private channel. And get it's id from @HELL_ID_BOT and paste here. Value should start with -100",
+      "description": "Create a private channel. And get it's id from and paste here. Value should start with -100",
 
-      "value": ""
+      "value": "",
+      
+      "required" :true
 
     },
 
-    "HELLBOT_SESSION": {
+    "SESSION": {
 
       "description": "Get this value by using repl or termux. Refer to Repo for more info.",
 
-      "value": ""
+      "value": "",
+      
+      "required" :true
 
     },
 
@@ -126,7 +142,9 @@
 
       "description": "Go to https://dashboard.heroku.com/account, scroll down and press Reveal API. Required for updater to work.",
 
-      "value": ""
+      "value": "",
+      
+      "required" :true
 
     },
 
@@ -134,7 +152,9 @@
 
       "description": "The Value of App Name you filled in right on top. Required for updater to work.",
 
-      "value": ""
+      "value": "",
+      
+      "required" :true
 
     },
 
@@ -142,7 +162,9 @@
 
       "description": "Make a bot from @BotFather and paste the bot token here.",
 
-      "value": ""
+      "value": "",
+      
+      "required" :true
 
     },
 
@@ -150,7 +172,9 @@
 
       "description": "Make a bot from @BotFather and paste the username here.",
 
-      "value": ""
+      "value": "",
+      
+      "required" :true
 
     },
 
@@ -199,12 +223,12 @@
     "url": "https://github.com/heroku/heroku-buildpack-apt.git"
 
   },{
-
-    "url": "heroku/python"
-
+  
+    "url": "https://github.com/chrismytton/heroku-buildpack-jq"
+    
   },{
 
-    "url": "https://github.com/chrismytton/heroku-buildpack-jq"
+    "url": "heroku/python"
 
   }]
 
