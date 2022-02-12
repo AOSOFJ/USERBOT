@@ -1,2 +1,2 @@
 WORKDIR /root
-worker: host.py
+worker: python3 host.py
