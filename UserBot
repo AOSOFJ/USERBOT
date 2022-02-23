@@ -1,0 +1,56 @@
+
+
+_get_repolink () {
+    local regex
+    regex='(https?)://github.com/.+/.+'
+    if [[ $USERBOT_REPO == "USERBOT" ]]
+    then
+        echo "aHR0cHM6Ly9naXRodWIuY29tL0FPU09GSi9VQi1CQUNLL2FyY2hpdmUvVXNlckJvdC56aXA=" | base64 -d
+    elif [[ $USERBOT_REPO == "USERBOT" ]]
+    then
+        echo "aHR0cHM6Ly9naXRodWIuY29tL0FPU09GSi9VQi1CQUNLL2FyY2hpdmUvVXNlckJvdC56aXA=" | base64 -d
+    elif [[ $USERBOT_REPO =~ $regex ]]
+    then
+        if [[ $USERBOT_REPO_BRANCH ]]
+        then
+            echo "${USERBOT_REPO}/archive/${USERBOT_REPO_BRANCH}.zip"
+        else
+            echo "${USERBOT_REPO}/archive/master.zip"
+        fi
+    else
+        echo "aHR0cHM6Ly9naXRodWIuY29tL0FPU09GSi9VQi1CQUNLL2FyY2hpdmUvVXNlckJvdC56aXA=" | base64 -d
+    fi
+}
+
+
+_setting_bot () {
+    local zippath
+    zippath="UserBot.zip"
+    echo "Downloading Source Code..."
+    wget -q $(_get_repolink) -O "$zippath"
+    echo "Unpacking Data..."
+    USERBOTPATH=$(zipinfo -1 "$zippath" | grep -v "/.");
+    unzip -qq "$zippath"
+    echo "Done!"
+    echo "Cleaning..."
+    rm -rf "$zippath"
+    sleep 5
+    cd $USERBOTPATH
+    echo "⚡Starting... Userbot⚡"
+    echo "
+    
+.##.....##.####..######...##.....##.########.##....##
+.###...###..##..##....##..##.....##....##.....##..##.
+.####.####..##..##........##.....##....##......####..
+.##.###.##..##..##...####.#########....##.......##...
+.##.....##..##..##....##..##.....##....##.......##...
+.##.....##..##..##....##..##.....##....##.......##...
+.##.....##.####..######...##.....##....##.......##...
+
+"
+
+    python3 ../setup/updater.py ../requirements.txt requirements.txt
+    python3 -m userbot
+}
+
+_setting_bot
