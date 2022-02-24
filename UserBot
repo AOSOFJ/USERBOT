@@ -5,10 +5,10 @@ _get_repolink () {
     regex='(https?)://github.com/.+/.+'
     if [[ $USERBOT_REPO == "USERBOT" ]]
     then
-        echo "aHR0cHM6Ly9naXRodWIuY29tL0FPU09GSi9VQi1CQUNLL2FyY2hpdmUvVXNlckJvdC56aXA=" | base64 -d
+        echo "aHR0cHM6Ly9naXRodWIuY29tL0FPU09GSi9VQi9hcmNoaXZlL21haW4uemlw" | base64 -d
     elif [[ $USERBOT_REPO == "USERBOT" ]]
     then
-        echo "aHR0cHM6Ly9naXRodWIuY29tL0FPU09GSi9VQi1CQUNLL2FyY2hpdmUvVXNlckJvdC56aXA=" | base64 -d
+        echo "aHR0cHM6Ly9naXRodWIuY29tL0FPU09GSi9VQi9hcmNoaXZlL21haW4uemlw" | base64 -d
     elif [[ $USERBOT_REPO =~ $regex ]]
     then
         if [[ $USERBOT_REPO_BRANCH ]]
@@ -18,7 +18,7 @@ _get_repolink () {
             echo "${USERBOT_REPO}/archive/master.zip"
         fi
     else
-        echo "aHR0cHM6Ly9naXRodWIuY29tL0FPU09GSi9VQi1CQUNLL2FyY2hpdmUvVXNlckJvdC56aXA=" | base64 -d
+        echo "aHR0cHM6Ly9naXRodWIuY29tL0FPU09GSi9VQi9hcmNoaXZlL21haW4uemlw" | base64 -d
     fi
 }
 
