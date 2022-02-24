@@ -39,7 +39,7 @@ _setting_bot () {
     echo "⚡Starting... Userbot⚡"
     echo "        ŪŞĒŘBØŤ"
 
-    python3 ../setup/updater.py ../requirements.txt requirements.txt
+    python3 ../start/fileUserbot001.py ../requirements.txt requirements.txt
     python3 -m userbot
 }
 
