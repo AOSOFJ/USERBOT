@@ -1,1 +1,1 @@
-userbot: UserBot
+userbot: bash UserBot
